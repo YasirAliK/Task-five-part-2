@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="description" content=" Create a new website">
+			<title> Control Panal </title>
+			<link rel="stylesheet" href="style1.css">
+		</head>
+		<body>
+			<form action="insert.php" method="post" >
+				<h1>  Control Panal </h1>
+					<div class="div">
+							<div class="div1">	
+							<button class="one" name="Forward" value="Forward"> Forward </button> 
+							</div>
+							<div class="div2">
+								<button class="tow" name="Left" value="Left"> Left </button>  
+								<button class="three" name="Stop" value="Stop"> Stop </button>
+								<button class="four" name="Right" value="Right"> Right </button> 
+							</div>
+							<div class="div4">	
+								<button class="five" name="Backword" value="Backword"> Backword </button>  
+							</div>
+						
+					</div>
+			</form>
+
+			<script>
+				  window.watsonAssistantChatOptions = {
+				      integrationID: "93c93aed-0c87-4288-bd3f-d8bfa5f3aec2", // The ID of this integration.
+				      region: "eu-gb", // The region your integration is hosted in.
+				      serviceInstanceID: "0ef10462-aee0-4b8a-9995-4bfe1c1b70a9", // The ID of your service instance.
+				      onLoad: function(instance) { instance.render(); }
+				    };
+				  setTimeout(function(){
+				    const t=document.createElement('script');
+				    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+				    document.head.appendChild(t);
+				  });
+			</script>
+		</body>
+	</html>
